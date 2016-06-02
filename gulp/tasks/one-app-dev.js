@@ -22,13 +22,15 @@ gulp.task("one-app-dev", function (callback) {
 
 gulp.task("one-app-dev-server", function(callback) {
     var myConfig = Object.create(webpackConfig);
-    myConfig.devtool = "eval";
+    myConfig.devtool = 'eval';
     myConfig.debug = true;
     var compiler = webpack(myConfig);
     new WebpackDevServer(compiler, {
+        contentBase:'./one-app/src/',
+        inline:true
     }).listen(2995, "localhost", function(err) {
         if(err) throw new gutil.PluginError("webpack-dev-server", err);
-        gutil.log("[webpack-dev-server]", "http://localhost:2995/one-app/src");
+        gutil.log("[webpack-dev-server]", "http://localhost:2995/");
         // keep the server alive or continue?
         // callback();
     });
