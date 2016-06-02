@@ -6,7 +6,7 @@ require('angular');
 require('angular-ui-router');
 require('bootstrap/dist/css/bootstrap.css');
 
-require('./module/wg.app.module');
+require('./module/wg-app');
 
 (function () {
     'use strict';
