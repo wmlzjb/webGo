@@ -4,10 +4,12 @@
 
 (function () {
     'use strict';
-    angular.module('wg.app').controller('loginController',loginClr);
-    loginClr.$inject=['$http'];
+    angular.module('wg.app').controller('loginController', loginClr);
+    loginClr.$inject = ['$http'];
 
     function loginClr($http) {
         var vm = this;
+        vm.title = 'Login';
+        vm.name = 'shem';
     }
 }());

@@ -4,5 +4,5 @@
 
 (function () {
     'use strict';
-    angular.module('wg.public.data',[]);
+    angular.module('wg.public.data', []);
 }());
