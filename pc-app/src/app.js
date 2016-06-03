@@ -13,4 +13,10 @@ require('./module/wg.app');
     var myApp = angular.module('myApp', ['ui.router', 'wg.app']);
 
     myApp.config(require('./app.router'));
+
+    myApp.run(['$rootScope', function ($rootScope) {
+        $rootScope.$on('$stateChangeStart', function (event, toState) {
+            $rootScope.pageTitle = toState.data.title;
+        });
+    }]);
 }());

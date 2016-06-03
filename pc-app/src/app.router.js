@@ -11,6 +11,7 @@ module.exports = ['$stateProvider', '$urlRouterProvider', '$locationProvider', f
         .state('login', {
             url: '/login',
             templateUrl: './module/login/login.html',
+            data: {title: 'Login'},
             controller: 'loginController',
             controllerAs: 'vm'
         });
