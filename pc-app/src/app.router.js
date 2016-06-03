@@ -5,11 +5,11 @@
 'use strict';
 module.exports = ['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
     //$locationProvider.html5Mode(true);
-    $urlRouterProvider.otherwise("/login");
+    $urlRouterProvider.otherwise("/");
 
     $stateProvider
         .state('login', {
-            url: '/login',
+            url: '/',
             templateUrl: './module/login/login.html',
             data: {title: 'Login'},
             controller: 'loginController',

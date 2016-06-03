@@ -14,7 +14,9 @@ require('./module/wg.app');
 
     myApp.config(require('./app.router'));
 
-    myApp.run(['$rootScope', function ($rootScope) {
+    myApp.run(['$rootScope', '$state', function ($rootScope, $state) {
+        $rootScope.$state = $state;
+
         $rootScope.$on('$stateChangeStart', function (event, toState) {
             $rootScope.pageTitle = toState.data.title;
         });
