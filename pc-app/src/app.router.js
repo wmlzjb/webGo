@@ -3,8 +3,8 @@
  */
 
 'use strict';
-module.exports = ['$stateProvider', '$urlRouterProvider', '$locationProvider', function ($stateProvider, $urlRouterProvider, $locationProvider) {
-    $locationProvider.html5Mode(true);
+module.exports = ['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
+    //$locationProvider.html5Mode(true);
     $urlRouterProvider.otherwise("/login");
 
     $stateProvider

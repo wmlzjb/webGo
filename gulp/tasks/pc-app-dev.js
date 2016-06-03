@@ -16,7 +16,7 @@ gulp.task("pc-app-dev", function (callback) {
             gutil.log("[webpack]", stats.toString({
                 // output options
             }));
-            callback();
+            //callback();
         });
 });
 

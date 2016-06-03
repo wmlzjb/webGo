@@ -10,6 +10,6 @@
     function loginClr($http) {
         var vm = this;
         vm.title = 'Login';
-        vm.name = 'shem';
+        vm.name = 'shem.wang';
     }
 }());
