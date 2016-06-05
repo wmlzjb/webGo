@@ -1,0 +1,10 @@
+$backgroudColor:#eee;
+
+body {
+  background: $backgroudColor;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/** Login **/
+@import 'login';
