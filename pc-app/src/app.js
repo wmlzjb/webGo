@@ -5,6 +5,7 @@
 require('angular');
 require('angular-ui-router');
 require('bootstrap/dist/css/bootstrap.css');
+require('./style/main.scss');
 
 require('./module/wg.app');
 
