@@ -2,10 +2,16 @@
  * Created by shem on 2016/6/1.
  */
 
+require('bootstrap/dist/css/bootstrap.css');
+require('bootstrap-material-design/dist/css/bootstrap-material-design.css');
+require('bootstrap-material-design/dist/css/ripples.css');
+require('./style/main.scss');
+
+require('jquery');
+require('bootstrap');
 require('angular');
 require('angular-ui-router');
-require('bootstrap/dist/css/bootstrap.css');
-require('./style/main.scss');
+require('bootstrap-material-design');
 
 require('./module/wg.app');
 
@@ -20,6 +26,10 @@ require('./module/wg.app');
 
         $rootScope.$on('$stateChangeStart', function (event, toState) {
             $rootScope.pageTitle = toState.data.title;
+        });
+
+        $rootScope.$on('$viewContentLoaded', function(event){
+            $.material.init();
         });
     }]);
 }());

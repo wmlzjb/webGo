@@ -1,29 +1,30 @@
 {
   "name": "Highlander",
   "version": "0.0.1",
-  "dependencies":{
-
+  "dependencies": {
   },
-  "devDependencies":{
-    "gulp":"3.9.1",
-    "gulp-util":"3.0.7",
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-util": "3.0.7",
     "run-sequence": "1.2.1",
     "require-dir": "0.3.0",
-    "node-sass":"3.7.0",
-    "sass-loader":"3.2.0",
-    "css-loader":"0.23.1",
-    "file-loader":"0.8.5",
-    "url-loader":"0.5.7",
-    "style-loader":"0.13.1",
-    "extract-text-webpack-plugin":"1.0.1",
-    "webpack":"1.13.1",
-    "webpack-dev-server":"1.14.1",
-    "bootstrap":"3.3.6",
-    "bootstrap-material-design":"0.5.10",
-    "angular":"1.5.6",
-    "angular-ui-router":"0.3.0",
-    "restangular":"1.5.2",
-    "angular-material":"1.1.0-rc.5",
-    "daemonite-material":"1.4.0"
+    "node-sass": "3.7.0",
+    "autoprefixer-loader": "3.2.0",
+    "sass-loader": "3.2.0",
+    "css-loader": "0.23.1",
+    "file-loader": "0.8.5",
+    "url-loader": "0.5.7",
+    "style-loader": "0.13.1",
+    "extract-text-webpack-plugin": "1.0.1",
+    "webpack": "1.13.1",
+    "webpack-dev-server": "1.14.1",
+    "bootstrap": "3.3.6",
+    "bootstrap-material-design": "0.5.10",
+    "angular": "1.5.6",
+    "angular-ui-router": "0.3.0",
+    "restangular": "1.5.2",
+    "angular-material": "1.1.0-rc.5",
+    "daemonite-material": "1.4.0",
+    "jquery": "2.2.4"
   }
 }

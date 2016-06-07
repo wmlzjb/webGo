@@ -1,6 +1,7 @@
 /**
  * Created by shem on 2016/6/1.
  */
+var webpack = require('webpack');
 var path = require("path");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
@@ -14,7 +15,10 @@ module.exports = {
     module: {
         //各种加载器，即让各种文件格式可用require引用
         loaders: [
-            {test: /\.scss$/, loader: ExtractTextPlugin.extract('css?sourceMap!' + 'sass?sourceMap')},
+            {
+                test: /\.scss$/,
+                loader: ExtractTextPlugin.extract('css?sourceMap!autoprefixer?{browsers:["last 2 version", "safari 5", "ie 9", "opera 12.1", "ios 6", "android 4"]}!' + 'sass?sourceMap')
+            },
             {test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader')},
             {test: /\.woff|\.woff2|\.svg|.eot|\.ttf/, loader: 'url?prefix=font/&limit=10000'},
             {test: /\.html$/, loader: 'file?name=html-[hash:6].html'},
@@ -23,6 +27,11 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin("app.css")
+        new ExtractTextPlugin("app.css"),
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery",
+            "window.jQuery": "jquery"
+        })
     ]
 };
