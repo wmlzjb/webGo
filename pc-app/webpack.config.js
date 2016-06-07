@@ -27,11 +27,6 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin("app.css"),
-        new webpack.ProvidePlugin({
-            $: "jquery",
-            jQuery: "jquery",
-            "window.jQuery": "jquery"
-        })
+        new ExtractTextPlugin("app.css")
     ]
 };

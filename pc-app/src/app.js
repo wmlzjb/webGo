@@ -3,15 +3,10 @@
  */
 
 require('bootstrap/dist/css/bootstrap.css');
-require('bootstrap-material-design/dist/css/bootstrap-material-design.css');
-require('bootstrap-material-design/dist/css/ripples.css');
 require('./style/main.scss');
 
-require('jquery');
-require('bootstrap');
 require('angular');
 require('angular-ui-router');
-require('bootstrap-material-design');
 
 require('./module/wg.app');
 
@@ -27,9 +22,11 @@ require('./module/wg.app');
         $rootScope.$on('$stateChangeStart', function (event, toState) {
             $rootScope.pageTitle = toState.data.title;
         });
-
-        $rootScope.$on('$viewContentLoaded', function(event){
-            $.material.init();
-        });
     }]);
 }());
+
+
+/**
+ * "bootstrap-material-design": "0.5.10",
+ * "daemonite-material": "1.4.0",
+ */
