@@ -1,21 +1,17 @@
-.panel.login-panel{
-   .panel-heading {
-     background-color: #fff;
-     border-bottom-width: 1px;
-     border-bottom-style: solid;
-     border-bottom-color: rgba(0, 0, 0, 0.12);
-
-     h1 {
-       margin-top: 12px;
-       margin-bottom: 12px;
-       font-size: 20px;
-       font-weight: 400;
-     }
-  }
+.panel.login-panel {
+  margin-top: 50px;
+  position: relative;
+  padding-top: 20px;
 
   .panel-body {
-    img{
+    img {
+      position: absolute;
       height: 80px;
+      border: 5px solid #fff;
+      top: -50px;
+      left: 50%;
+      margin-left: -50px;
+      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.18);
     }
   }
 }

@@ -7,4 +7,6 @@
     angular.module('wg.app',[]);
 }());
 
-require('./login/login.controller');
+require('./login');
+require('./contacts');
+require('./layout');

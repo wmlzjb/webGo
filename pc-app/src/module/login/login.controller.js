@@ -5,11 +5,14 @@
 (function () {
     'use strict';
     angular.module('wg.app').controller('loginController', loginClr);
-    loginClr.$inject = ['$http'];
+    loginClr.$inject = ['$state'];
 
-    function loginClr($http) {
+    function loginClr($state) {
         var vm = this;
         vm.title = 'Login';
         vm.name = 'shem.wang';
+        vm.loginFun=function () {
+            $state.go('root.contacts.list');
+        }
     }
 }());

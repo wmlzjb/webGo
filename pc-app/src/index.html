@@ -7,9 +7,11 @@
     <title ng-bind="pageTitle"></title>
     <link rel="stylesheet" href="bundle/app.css"/>
 </head>
-<body>
+<body class="login-page">
 
-  <div ui-view></div>
+<header ui-view="wg-header"></header>
+<div ui-view="wg-content"></div>
+<footer ui-view="wg-footer"></footer>
 
 <script src="bundle/app.js"></script>
 </body>
