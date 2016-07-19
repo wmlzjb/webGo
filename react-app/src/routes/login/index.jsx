@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import Button from './containers/LoginForm.js'
+import LoginForm from './containers/LoginForm.js'
 
 class componentName extends Component {
     render() {
         return (
-            <div>
-                <Button/>
+            <div className="login-box">
+                <LoginForm />
             </div>
         );
     }

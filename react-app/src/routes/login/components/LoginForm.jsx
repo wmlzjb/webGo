@@ -14,7 +14,7 @@ class componentName extends Component {
 
     render() {
         return (
-            <div>
+            <div className="login-form">
                 <Card>
                     <CardHeader title="Login" />
                     <CardText>
@@ -22,6 +22,7 @@ class componentName extends Component {
                             <TextField
                                 floatingLabelText="UserName"
                                 ref="name"
+                                fullWidth={true}
                                 />
                         </div>
                         <div>
@@ -29,6 +30,7 @@ class componentName extends Component {
                                 floatingLabelText="Password"
                                 type="password"
                                 ref="pwd"
+                                fullWidth={true}
                                 />
                         </div>
                         <div>

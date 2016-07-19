@@ -12,6 +12,5 @@ export const postLogin = (user) => {
         } else {
             alert('请输入用户名密码');
         }
-
     }
 }
