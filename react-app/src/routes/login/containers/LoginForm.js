@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import Button from '../components/LoginForm.jsx'
+import LoginForm from '../components/LoginForm.jsx'
 import { postLogin } from '../../../actions'
 
 const mapStateToProps = (state) => {
@@ -10,4 +10,4 @@ const mapDispatchToProps = (dispatch) => {
     return bindActionCreators({ postLogin }, dispatch);
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Button);
+export default connect(mapStateToProps, mapDispatchToProps)(LoginForm);
